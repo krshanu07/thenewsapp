@@ -7,7 +7,7 @@ class News {
   List<NewsModel> news = [];
 
   Future<void> getNews() async{
-    String url = 'https://inshortsv2.vercel.app/topic/national/50';
+    String url = 'https://inshortsv2.vercel.app/news?type=all_news&limit=50';
     
     var response = await http.get(url);
     var jsonData = jsonDecode(response.body);
@@ -35,7 +35,7 @@ class CategoryNewsClass {
   List<NewsModel> news = [];
 
   Future<void> getNews(String category) async {
-    String url = 'https://inshortsv2.vercel.app/topic/$category/50';
+    String url = 'https://inshortsv2.vercel.app/news?type=$category&limit=20';
 
     var response = await http.get(url);
     var jsonData = jsonDecode(response.body);

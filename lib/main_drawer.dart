@@ -28,7 +28,7 @@ class MainDrawer extends StatelessWidget {
   }
 
   _shareText() {
-    Share.share('To Read Short News Download - TheNewsApp\nhttps://play.google.com/store/apps/details?id=com.developer.thenewsapp');
+    Share.share('To get updated with latest news download - TheNewsApp\nhttps://play.google.com/store/apps/details?id=com.developer.thenewsapp');
   }
 
   @override
